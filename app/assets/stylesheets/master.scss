@@ -1,1 +1,19 @@
 @import "bootstrap";
+
+.navbar {
+  font-family: "Helevetica Neue", Helvetica;
+  font-weight: 200;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background: image_url('interlaced.png');
+}
+
+.navbar-light a.navbar-brand {
+  font-family: "Helevetica Neue", Helvetica;
+  font-weight: 100;
+  font-size: 30px;
+  color: #0072ff;
+}
+.navbar-light a.navbar-brand:hover {
+  color: #0072ff;
+}
+
