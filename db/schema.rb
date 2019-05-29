@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2019_05_28_223118) do
 
   create_table "lessons", force: :cascade do |t|
     t.string "title"
-    t.string "subtile"
+    t.string "subtitle"
     t.integer "section_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
