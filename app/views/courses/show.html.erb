@@ -4,8 +4,10 @@
   <h1 class="text-center"><%= @course.title %></h1>
   <br />
   <div class="row">
-    <div class="col-sm-4 col-12 text-center">
-      <span class="badge badge-default"><%= number_to_currency @course.cost %></span>
+    <div class="col-sm-4 col-12">
+      <span class="badge badge-default">
+        <%= number_to_currency @course.cost %>
+      </span>
 
       <% if current_user && current_user == @course.user %>
         <br />
@@ -19,10 +21,21 @@
     </div>
   </div>
 
+  <hr />
+
   <div class="col-12">
-    <% @course.section.each do |section|
+    <% @course.sections.each do |section| %>
       <div class="section">
         <%= section.title %>
+        <% section.lessons.each do |lesson| %>
+          <div class="lesson">
+          <%= link_to lesson_path(lesson) do %>
+            <b><%= lesson.title %></b>
+            -
+            <%= lesson.subtitle %>
+          <% end %>
+          </div>
+        <% end %>
       </div>
     <% end %>
   </div>
