@@ -7,6 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://vjs.zencdn.net/7.5.4/video-js.css" rel="stylesheet">
   </head>
 
   <body>
@@ -17,7 +18,7 @@
         </button>
         <!-- create link to root_path -->
         <%= link_to root_path do %>
-          <%= image_tag 'F_logo.png', class: 'navbar-brand' %><a class="navbar-brand"><strong>ilmster</strong></a>
+          <%= image_tag 'F_logo.png', class: 'navbar-brand' %>
         <% end %>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       
@@ -61,5 +62,7 @@
       </div>
     </div>
 
+    <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
   </body>
 </html>
