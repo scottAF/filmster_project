@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The application I built is a two-sided video-streaming marketplace, featuring credit card payment capabilities, user role management, advanced UI and UX, and advanced database relationships, which is similar to other platforms like Udemy.
 
-Things you may want to cover:
+My Filmster app has:
 
-* Ruby version
+  1. A Homepage for:
+    *Students
+    *Instructor
+  
+  2. Student Course Overview Page:
+    *Course section Detail
+    *Course video page
+    
+  3. Instructor Course Overview Page:
+    *Course creation
+    *Courses and avialable section
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
